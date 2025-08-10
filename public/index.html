@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kafka Order Sender</title>
+</head>
+<body>
+  <h1>Create Order</h1>
+  <form id="orderForm">
+    <button type="submit">Send Order</button>
+  </form>
+
+  <h3>Last Sent Order:</h3>
+  <pre id="lastOrder">No order sent yet.</pre>
+
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const res = await fetch('/send-order', { method: 'POST' });
+      const data = await res.json();
+      document.getElementById('lastOrder').textContent = JSON.stringify(data, null, 2);
+    });
+  </script>
+</body>
+</html>
