@@ -28,10 +28,10 @@ A simple Node.js KafkaJS project that:
 ### 1. Install Kafka Locally
 
 ### 2. Run terminal
-# Terminal 1: Start Zookeeper
+#### Terminal 1: Start Zookeeper
 bin/zookeeper-server-start.sh config/zookeeper.properties
 
-# Terminal 2: Start Kafka broker
+#### Terminal 2: Start Kafka broker
 bin/kafka-server-start.sh config/server.properties
 
 ### 3. Create Topic
