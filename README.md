@@ -64,6 +64,9 @@ Last Sent Order:
 Consumer Console:
 Received order: {"id":1691669273000,"status":"created from web"}
 
+![Sample Output]("sample output html.png")
+
+
 
 
 
