@@ -18,3 +18,57 @@ A simple Node.js KafkaJS project that:
 ├── producer.js          
 ├── consumer.js          
 ├── package.json
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Install Kafka Locally
+
+### 2. Run terminal
+# Terminal 1: Start Zookeeper
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+# Terminal 2: Start Kafka broker
+bin/kafka-server-start.sh config/server.properties
+
+### 3. Create Topic
+bin/kafka-topics.sh --create --topic orders --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+### 4. Install Dependencies
+npm install express kafkajs
+
+
+### 5. Run the Consumer
+node consumer.js
+
+
+### 6. Run the Web Server
+node server.js
+
+
+Open your browser: http://localhost:3000
+
+
+Example Output
+
+Last Sent Order:
+{
+  "id": 1691669273000,
+  "status": "created from web"
+}
+
+
+Consumer Console:
+Received order: {"id":1691669273000,"status":"created from web"}
+
+
+
+
+
+
+
+
+
