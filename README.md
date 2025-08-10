@@ -13,8 +13,7 @@ A simple Node.js KafkaJS project that:
 ---
 
 ## 📂 Project Structure
-├── public
-│   └── index.html      
+├── public/ index.html      
 ├── server.js            
 ├── producer.js          
 ├── consumer.js          
