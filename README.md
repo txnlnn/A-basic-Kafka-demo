@@ -13,10 +13,9 @@ A simple Node.js KafkaJS project that:
 ---
 
 ## 📂 Project Structure
-.
 ├── public
-│ └── index.html # Frontend HTML
-├── server.js # Express server + Kafka producer
-├── producer.js # Standalone Kafka producer
-├── consumer.js # Kafka consumer
+│   └── index.html      
+├── server.js            
+├── producer.js          
+├── consumer.js          
 ├── package.json
